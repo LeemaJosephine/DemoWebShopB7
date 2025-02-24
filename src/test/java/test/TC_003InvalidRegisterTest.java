@@ -5,7 +5,7 @@ import java.io.IOException;
 import base.ProjectSpecificationMethods;
 import pages.HomePage;
 
-public class TC_001RegisterTest extends ProjectSpecificationMethods{
+public class TC_003InvalidRegisterTest extends ProjectSpecificationMethods {
 
 	public static void main(String[] args) throws IOException {
 		// TODO Auto-generated method stub
@@ -13,22 +13,21 @@ public class TC_001RegisterTest extends ProjectSpecificationMethods{
 		filepath="C:\\Users\\Digital Suppliers\\eclipse-workspace\\DemoWebShopProject1\\src\\test\\resources\\data\\SignUpData.properties";
 		readFromPropFile(filepath);
 		
-		HomePage obj = new HomePage(driver);
-		obj.launchingBrowserandLoadingURL(prop.getProperty("url"));
+		HomePage obj1 = new HomePage(driver);
+		obj1.launchingBrowserandLoadingURL(prop.getProperty("url"));
 		
-		obj.clickRegister()
+		obj1.clickRegister()
 		.clickGender()
-		.enterFirstName(prop.getProperty("firstname"))
-		.enterLastName(prop.getProperty("lastname"))
-		.enterEmail(prop.getProperty("email"))
-		.enterPass(prop.getProperty("pass"))
-		.enterConPass(prop.getProperty("conpass"))
+		.enterFirstName(prop.getProperty("Infirstname"))
+		.enterLastName(prop.getProperty("Inlastname"))
+		.enterEmail(prop.getProperty("Inemail"))
+		.enterPass(prop.getProperty("Inpass"))
+		.enterConPass(prop.getProperty("Inconpass"))
 		.clickRegisterButton()
 		.validateRegister()
 		.clickContinue()
 		.closeBrowser();
-		
-		
+	
 	}
 
 }

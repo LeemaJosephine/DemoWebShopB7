@@ -7,9 +7,9 @@ import utils.Utility;
 public class ProjectSpecificationMethods extends Utility{
 
 	
-	public void launchingBrowserandLoadingURL() {
+	public void launchingBrowserandLoadingURL(String url) {
 		
-		 browser();
+		 browser(url);
 
 	}
 	
