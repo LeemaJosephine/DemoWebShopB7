@@ -1,0 +1,132 @@
+Day 31: Database connectivity 
+-----------------------------
+Introduction to Database -MYSQL
+Use MySql on cmd and Workbench.
+Java Database connectivity(JDBC)
+Installation of MYSQL Server
+Queriy Excecution-DDL& DML
+
+MySQL:
+------
+MySQL is open-source Relational Database Management System (RDBMS) used for storing and managing data in tables.
+MySQL allows you to manage large datasets effectively through Structured Queried Language(SQL).
+
+Key concepts:
+
+Student Database
+	Student Academic info
+		-> Marks-> Tamil, English, Maths, Science etc. 	
+	Student Personal info
+		-> Address, contact information etc
+	Student Other info
+		-> 
+	Student Medical info
+		-> Blood group, Medical conditions
+
+Database: A collection of data stored in an organized manner in tables
+Tables: A collection of rows and columns used to store data.
+Row: A record of data
+Columns: Represents a field in a table that holds a specific type of data.
+
+SQL:
+	SQL Commands are like instructions to a table. It is used to interact with the database with some operations.
+Various tasks that can performed like, creating a table, adding data to the table, modifying the data.
+
+SQL commands are categorized into 5 category:
+
+1. DDL : Data Definition Language
+2. DML : Data Manipulation Language
+3. DCL : Data Control Language
+4. DQL : Data Query Language
+5. TCL : Transaction Control Language.
+
+DDL : Data Definition Language
+
+	Using DDL, we can define, alter and delete the database/table. 
+
+1. Create --> Create database, table 
+2. ALTER --> Altering the structure of the table.
+3. Drop --> Drop an existing table in a database.
+4. Truncate --> Delete the data inside a table, but not the table itself.
+5. Rename --> Rename the name of the database or name of the table
+6. Comment --> Add comments to the data
+
+DML : Data Manipulation Language
+
+1. Insert - Used to add/insert data to the table
+2. Select - shows the records of the specified table. It also shows the particular record of a particular table by using WHERE clause.
+3. Update - Helps to change/modify the existing record.
+4. Delete - Helps to remove a single or multiple existing record from the table.
+
+1. Creating Database:
+	
+		Syntax: Create database database_name;
+		E.g: Create database Employee;
+
+2. Use Database:
+		To mention in which database the tables has to be created.
+
+		Syntax: use database_name;
+		E.g: use employee;
+
+3. Create table:
+
+		Syntax: Create table table_name (column1 datatype,column2 datatype, column3 datatype);
+		E.g: Create table emplyoee_details (empid int UNIQUE, emp_name varchar(20) NOT NULL, designation varchar(10), salary decimal(10,4));
+
+	Constraints:
+		Not null - Ensures that a column cannot have a null value
+		Unique -
+		Default - Sets a default value for column of no value is specified.
+		Primary key
+		Foreign key
+
+4. Insert the data
+	Sysntac: Insert into table_name (emp_id,emp_name,designation,salary) values (101,'Arun','Manager',10000.50)
+
+
+JDBC -
+
+	Java Database Connectivity
+
+<!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
+<dependency>
+    <groupId>mysql</groupId>
+    <artifactId>mysql-connector-java</artifactId>
+    <version>8.0.33</version>
+</dependency>
+
+	
+To focus next:
+
+1. Primary key and Foreign key
+2. Join	-> working with 2 table	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
