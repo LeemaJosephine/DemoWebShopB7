@@ -2,19 +2,24 @@ package test;
 
 import java.io.IOException;
 
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Test;
+
 import base.ProjectSpecificationMethods;
 import pages.HomePage;
 
 public class TC_001RegisterTest extends ProjectSpecificationMethods{
 
-	public static void main(String[] args) throws IOException {
-		// TODO Auto-generated method stub
-
+	@BeforeTest
+	public void setuo() throws IOException {
 		filepath="C:\\Users\\Digital Suppliers\\eclipse-workspace\\DemoWebShopProject1\\src\\test\\resources\\data\\SignUpData.properties";
 		readFromPropFile(filepath);
+	}
+	@Test
+	public void registerTest() {
+		// TODO Auto-generated method stub
 		
 		HomePage obj = new HomePage(driver);
-		obj.launchingBrowserandLoadingURL(prop.getProperty("url"));
 		
 		obj.clickRegister()
 		.clickGender()

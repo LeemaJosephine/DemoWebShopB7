@@ -1,18 +1,21 @@
 package base;
 
 import org.openqa.selenium.WebDriver;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
 
 import utils.Utility;
 
 public class ProjectSpecificationMethods extends Utility{
 
-	
-	public void launchingBrowserandLoadingURL(String url) {
+	@BeforeMethod
+	public void launchingBrowserandLoadingURL() {
 		
-		 browser(url);
+		 browser(prop.getProperty("url"));
 
 	}
 	
+	//@AfterMethod
 	public void closeBrowser() {
 		
 		browserclose();
