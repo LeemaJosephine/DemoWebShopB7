@@ -35,10 +35,10 @@ public class LoginPage extends ProjectSpecificationMethods {
 		return this;
 	}
 
-	public LoginPage clickLoginButton() {
+	public HomePage clickLoginButton() {
 	
 		loginButon.click();
-		return this;
+		return new HomePage(driver);
 }	
 	
 }

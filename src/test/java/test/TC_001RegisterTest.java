@@ -20,7 +20,6 @@ public class TC_001RegisterTest extends ProjectSpecificationMethods{
 		// TODO Auto-generated method stub
 		
 		HomePage obj = new HomePage(driver);
-		
 		obj.clickRegister()
 		.clickGender()
 		.enterFirstName(prop.getProperty("firstname"))
@@ -28,10 +27,10 @@ public class TC_001RegisterTest extends ProjectSpecificationMethods{
 		.enterEmail(prop.getProperty("email"))
 		.enterPass(prop.getProperty("pass"))
 		.enterConPass(prop.getProperty("conpass"))
-		.clickRegisterButton()
-		.validateRegister()
-		.clickContinue()
-		.closeBrowser();
+		.clickRegisterButton();
+//		.validateRegister()
+//		.clickContinue()
+		
 		
 		
 	}

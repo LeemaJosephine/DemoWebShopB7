@@ -14,20 +14,17 @@ public class TC_002LoginTest extends ProjectSpecificationMethods{
 	@BeforeTest
 	public void setup() throws IOException {
 		
-		filepath="C:\\Users\\Digital Suppliers\\eclipse-workspace\\DemoWebShopProject1\\src\\test\\resources\\data\\SignUpData.properties";
-		readFromPropFile(filepath);
+		sheetname="LoginData";
 	}
-	@Test  // Mandatory for the test to execute 
-	public void loginTest() throws IOException {
+	@Test(dataProvider = "readData")  // Mandatory for the test to execute 
+	public void loginTest(String email, String pass, String testType, String expectedText) throws IOException {
 		
-		filepath="C:\\Users\\Digital Suppliers\\eclipse-workspace\\DemoWebShopProject1\\src\\test\\resources\\data\\DemoWebShopTestData.xlsx";
-		String email = getCellData(filepath, "LoginData", 1, 0); // 1st row 1st column
-		String pass = getCellData(filepath, "LoginData", 1, 1); // 1st row 2nd column
 		HomePage obj = new HomePage(driver);
 		obj.clickLogin()
 		.enterEmail(email)
 		.enterpass(pass)
-		.clickLoginButton();
+		.clickLoginButton()
+		.validateLogin(testType,expectedText);
 	}
 
 }

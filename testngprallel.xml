@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Suite">
+<parameter name="url" value="https://demowebshop.tricentis.com/"> </parameter>
+  <test name="ChromeTest" thread-count="5">
+  <parameter name="browser" value="Chrome"> </parameter>
+    <classes>
+      <class name="test.TC_001RegisterTest"/>
+    </classes>
+  </test> <!-- Test -->
+  
+  <test name="EdgeTest" thread-count="1">
+  <parameter name="browser" value="Edge"> </parameter>
+    <classes>
+      <class name="test.TC_002LoginTest"/>
+    </classes>
+  </test> <!-- Test -->
+  
+</suite> <!-- Suite -->
