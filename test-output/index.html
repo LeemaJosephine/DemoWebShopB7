@@ -147,7 +147,7 @@
                   <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
 	expected [Please enter a valid email addres] but found [Please enter a valid email address.]
 	at pages.HomePage.validateLogin(HomePage.java:58)
-	at test.TC_002LoginTest.loginTest(TC_002LoginTest.java:27)
+	at test.TC_002LoginTest.loginTest(TC_002LoginTest.java:31)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 ... Removed 29 stack frames
 </div> <!-- stack-trace -->
@@ -182,6 +182,9 @@
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;parameter name=&quot;url&quot; value=&quot;https://demowebshop.tricentis.com/&quot;/&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;utils.ListenerClass&quot;/&gt;
+  &lt;/listeners&gt;
   &lt;test thread-count=&quot;3&quot; name=&quot;ChromeTest&quot;&gt;
     &lt;parameter name=&quot;browser&quot; value=&quot;Chrome&quot;/&gt;
   &lt;/test&gt; &lt;!-- ChromeTest --&gt;
@@ -235,11 +238,11 @@ data.addRows(2);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'loginTest')
 data.setCell(0, 2, 'test.TC_002LoginTest')
-data.setCell(0, 3, 2668);
+data.setCell(0, 3, 2784);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'loginTest')
 data.setCell(1, 2, 'test.TC_002LoginTest')
-data.setCell(1, 3, 1623);
+data.setCell(1, 3, 1785);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
@@ -271,36 +274,48 @@ return data;
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
               <div class="chronological-class-name">test.TC_002LoginTest</div> <!-- chronological-class-name -->
+              <div class="configuration-suite before">
+                <span class="method-name">reportIniatialization</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-suite before -->
               <div class="configuration-test before">
                 <span class="method-name">setup</span>
-                <span class="method-start">0 ms</span>
+                <span class="method-start">1107 ms</span>
               </div> <!-- configuration-test before -->
+              <div class="configuration-class before">
+                <span class="method-name">testDetails</span>
+                <span class="method-start">1123 ms</span>
+              </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">launchingBrowserandLoadingURL(https://demowebshop.tricentis.com/, Chrome)</span>
-                <span class="method-start">2624 ms</span>
+                <span class="method-start">3799 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">loginTest(Leema12345@gmail.com, Leema.12345, ValidEmailValidPassword, Leema12345@gmail.com)</span>
-                <span class="method-start">10281 ms</span>
+                <span class="method-start">11883 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">closeBrowser</span>
-                <span class="method-start">12960 ms</span>
+                <span class="method-start">15071 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">launchingBrowserandLoadingURL(https://demowebshop.tricentis.com/, Chrome)</span>
-                <span class="method-start">13210 ms</span>
+                <span class="method-start">15988 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">loginTest(leema@gmail, Leema.12345, InValidEmailValidPassword, Please enter a valid email addres)</span>
-                <span class="method-start">19958 ms</span>
+                <span class="method-start">24247 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">closeBrowser</span>
-                <span class="method-start">21599 ms</span>
+                <span class="method-start">26393 ms</span>
               </div> <!-- configuration-method after -->
+              <div class="configuration-suite after">
+                <span class="method-name">reportClose</span>
+                <span class="method-start">27794 ms</span>
+              </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

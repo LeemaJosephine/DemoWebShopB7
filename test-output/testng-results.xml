@@ -2,18 +2,26 @@
 <testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-03-05T20:55:09 IST" name="Suite" finished-at="2025-03-05T20:55:31 IST" duration-ms="22562">
+  <suite started-at="2025-03-06T20:27:48 IST" name="Suite" finished-at="2025-03-06T20:28:14 IST" duration-ms="26752">
     <groups>
     </groups>
-    <test started-at="2025-03-05T20:55:09 IST" name="ChromeTest" finished-at="2025-03-05T20:55:09 IST" duration-ms="39">
+    <test started-at="2025-03-06T20:27:48 IST" name="ChromeTest" finished-at="2025-03-06T20:27:48 IST" duration-ms="30">
     </test> <!-- ChromeTest -->
-    <test started-at="2025-03-05T20:55:09 IST" name="EdgeTest" finished-at="2025-03-05T20:55:31 IST" duration-ms="22254">
+    <test started-at="2025-03-06T20:27:48 IST" name="EdgeTest" finished-at="2025-03-06T20:28:14 IST" duration-ms="26666">
       <class name="test.TC_002LoginTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:test.TC_002LoginTest@4e08711f]" started-at="2025-03-05T20:55:09 IST" name="setup" finished-at="2025-03-05T20:55:09 IST" duration-ms="27" status="PASS">
+        <test-method is-config="true" signature="reportIniatialization()[pri:0, instance:test.TC_002LoginTest@b3ca52e]" started-at="2025-03-06T20:27:47 IST" name="reportIniatialization" finished-at="2025-03-06T20:27:48 IST" duration-ms="1017" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reportIniatialization -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:test.TC_002LoginTest@b3ca52e]" started-at="2025-03-06T20:27:48 IST" name="setup" finished-at="2025-03-06T20:27:48 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="launchingBrowserandLoadingURL(java.lang.String,java.lang.String)[pri:0, instance:test.TC_002LoginTest@4e08711f]" started-at="2025-03-05T20:55:12 IST" name="launchingBrowserandLoadingURL" finished-at="2025-03-05T20:55:19 IST" duration-ms="7654" status="PASS">
+        <test-method is-config="true" signature="testDetails()[pri:0, instance:test.TC_002LoginTest@b3ca52e]" started-at="2025-03-06T20:27:48 IST" name="testDetails" finished-at="2025-03-06T20:27:48 IST" duration-ms="20" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDetails -->
+        <test-method is-config="true" signature="launchingBrowserandLoadingURL(java.lang.String,java.lang.String)[pri:0, instance:test.TC_002LoginTest@b3ca52e]" started-at="2025-03-06T20:27:50 IST" name="launchingBrowserandLoadingURL" finished-at="2025-03-06T20:27:59 IST" duration-ms="8076" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -29,7 +37,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchingBrowserandLoadingURL -->
-        <test-method signature="loginTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:test.TC_002LoginTest@4e08711f]" started-at="2025-03-05T20:55:19 IST" name="loginTest" data-provider="readData" finished-at="2025-03-05T20:55:22 IST" duration-ms="2668" status="PASS">
+        <test-method signature="loginTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:test.TC_002LoginTest@b3ca52e]" started-at="2025-03-06T20:27:59 IST" name="loginTest" data-provider="readData" finished-at="2025-03-06T20:28:01 IST" duration-ms="2784" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -55,11 +63,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTest -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:test.TC_002LoginTest@4e08711f]" started-at="2025-03-05T20:55:22 IST" name="closeBrowser" finished-at="2025-03-05T20:55:22 IST" duration-ms="249" status="PASS">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:test.TC_002LoginTest@b3ca52e]" started-at="2025-03-06T20:28:02 IST" name="closeBrowser" finished-at="2025-03-06T20:28:03 IST" duration-ms="916" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-        <test-method is-config="true" signature="launchingBrowserandLoadingURL(java.lang.String,java.lang.String)[pri:0, instance:test.TC_002LoginTest@4e08711f]" started-at="2025-03-05T20:55:22 IST" name="launchingBrowserandLoadingURL" finished-at="2025-03-05T20:55:29 IST" duration-ms="6748" status="PASS">
+        <test-method is-config="true" signature="launchingBrowserandLoadingURL(java.lang.String,java.lang.String)[pri:0, instance:test.TC_002LoginTest@b3ca52e]" started-at="2025-03-06T20:28:03 IST" name="launchingBrowserandLoadingURL" finished-at="2025-03-06T20:28:11 IST" duration-ms="8259" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -75,7 +83,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchingBrowserandLoadingURL -->
-        <test-method signature="loginTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:test.TC_002LoginTest@4e08711f]" started-at="2025-03-05T20:55:29 IST" name="loginTest" data-provider="readData" finished-at="2025-03-05T20:55:31 IST" duration-ms="1623" status="FAIL">
+        <test-method signature="loginTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:test.TC_002LoginTest@b3ca52e]" started-at="2025-03-06T20:28:11 IST" name="loginTest" data-provider="readData" finished-at="2025-03-06T20:28:13 IST" duration-ms="1785" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -109,7 +117,7 @@ expected [Please enter a valid email addres] but found [Please enter a valid ema
 at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
 at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
 at pages.HomePage.validateLogin(HomePage.java:58)
-at test.TC_002LoginTest.loginTest(TC_002LoginTest.java:27)
+at test.TC_002LoginTest.loginTest(TC_002LoginTest.java:31)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -144,10 +152,14 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTest -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:test.TC_002LoginTest@4e08711f]" started-at="2025-03-05T20:55:31 IST" name="closeBrowser" finished-at="2025-03-05T20:55:31 IST" duration-ms="634" status="PASS">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:test.TC_002LoginTest@b3ca52e]" started-at="2025-03-06T20:28:13 IST" name="closeBrowser" finished-at="2025-03-06T20:28:14 IST" duration-ms="1375" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="reportClose()[pri:0, instance:test.TC_002LoginTest@b3ca52e]" started-at="2025-03-06T20:28:14 IST" name="reportClose" finished-at="2025-03-06T20:28:16 IST" duration-ms="1204" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reportClose -->
       </class> <!-- test.TC_002LoginTest -->
     </test> <!-- EdgeTest -->
   </suite> <!-- Suite -->

@@ -15,6 +15,10 @@ public class TC_002LoginTest extends ProjectSpecificationMethods{
 	public void setup() throws IOException {
 		
 		sheetname="LoginData";
+		testName="Login Test";
+		testDescription="Testing the login functionality with positive and negative cases";
+		testAuthor="Leema Josephine";
+		testCategory="Smoke Testing";
 	}
 	@Test(dataProvider = "readData")  // Mandatory for the test to execute 
 	public void loginTest(String email, String pass, String testType, String expectedText) throws IOException {

@@ -1,0 +1,41 @@
+Validating Tests with Assertions
+Prioritizing Tests
+TestNG dataProvider with Excel
+Parallel Test Execution with TestNG
+Creating multiple Tests
+Parameterizing Tests with dataProvider
+Creating and Running Test Suites with TestNG.xml
+Cross Browser Testing using TestNG
+
+
+Create testing.xml
+------------------
+
+Choose the test class by Shift + click -> Right-click -> TestNG -> Convert to TestNg
+
+Data Provider:
+	To perform data driven testing
+
+Test data:
+	1. Static data -> maintain data in property file or use parameter tag in testing.xml
+	2. Dynamic data -> Excel
+
+Assertions:
+	Helps us to verify the condition of the test and decide whether the test has passed or failed.
+
+2 types:
+	Hard assertion
+		-> If there are any failure it will not proceed further and it stop the execution
+
+		Assert.assertTrue(true): -> looks for true condition, in case of false test case will be marked as fail
+		Assert.assertFalse(false); -> looks for false condition, in case of true, test will be marked as fail
+		Assert.assertEquals(actualText,expectText)-> if the expected and actual are matching then the test will be passed.
+	
+	Soft assertion 
+		-> If there are any failures, it will still execute all lines of code and in the end it will notify the failure.
+
+		SoftAssert asserObj = new SoftAssert();
+		asserObj.assertTrue(true);
+		asserObj.assertFalse(false);
+		asserObj.assertEquals(actualText,expectText); 
+		asserObj.assertAll(); -> should be mentioned in the end.
