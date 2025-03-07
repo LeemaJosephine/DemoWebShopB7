@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>EdgeTest</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>1/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Mar 06 20:27:48 IST 2025</td>
+<td>Started on:</td><td>Fri Mar 07 18:44:17 IST 2025</td>
 </tr>
-<tr><td>Total time:</td><td>26 seconds (26666 ms)</td>
+<tr><td>Total time:</td><td>2 seconds (2846 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,27 +76,22 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='test.TC_002LoginTest.loginTest()'><b>loginTest</b><br>Test class: test.TC_002LoginTest<br>Parameters: leema@gmail, Leema.12345, InValidEmailValidPassword, Please enter a valid email addres</td>
-<td><div><pre>java.lang.AssertionError: The following asserts failed:
-	expected [Please enter a valid email addres] but found [Please enter a valid email address.]
-	at pages.HomePage.validateLogin(HomePage.java:58)
-	at test.TC_002LoginTest.loginTest(TC_002LoginTest.java:31)
+<td title='test.TC_002LoginTest.loginTest()'><b>loginTest</b><br>Test class: test.TC_002LoginTest</td>
+<td><div><pre>org.testng.internal.reflect.MethodMatcherException: 
+[public void test.TC_002LoginTest.loginTest(java.lang.String,java.lang.String,java.lang.String) throws java.io.IOException] has no parameters defined but was found to be using a data provider (either explicitly specified or inherited from class level annotation).
+Data provider mismatch
+Method: loginTest([java.lang.String arg0, java.lang.String arg1, java.lang.String arg2])
+Arguments: [(java.lang.String) Leema12345@gmail.com,(java.lang.String) Leema.12345,(java.lang.String) ValidEmailValidPassword,(java.lang.String) Leema12345@gmail.com]
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1928983164", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1928983164'><pre>java.lang.AssertionError: The following asserts failed:
-	expected [Please enter a valid email addres] but found [Please enter a valid email address.]
-	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
-	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
-	at pages.HomePage.validateLogin(HomePage.java:58)
-	at test.TC_002LoginTest.loginTest(TC_002LoginTest.java:31)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1062181581", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1062181581'><pre>org.testng.internal.reflect.MethodMatcherException: 
+[public void test.TC_002LoginTest.loginTest(java.lang.String,java.lang.String,java.lang.String) throws java.io.IOException] has no parameters defined but was found to be using a data provider (either explicitly specified or inherited from class level annotation).
+Data provider mismatch
+Method: loginTest([java.lang.String arg0, java.lang.String arg1, java.lang.String arg2])
+Arguments: [(java.lang.String) Leema12345@gmail.com,(java.lang.String) Leema.12345,(java.lang.String) ValidEmailValidPassword,(java.lang.String) Leema12345@gmail.com]
+	at org.testng.internal.reflect.DataProviderMethodMatcher.getConformingArguments(DataProviderMethodMatcher.java:46)
+	at org.testng.internal.Parameters.injectParameters(Parameters.java:909)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:37)
 	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
 	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
 	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
@@ -118,22 +113,8 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>1</td>
-<td>test.TC_002LoginTest@b3ca52e</td></tr>
-</table><p>
-<table width='100%' border='1' class='invocation-passed'>
-<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td><b>Attribute(s)</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='test.TC_002LoginTest.loginTest()'><b>loginTest</b><br>Test class: test.TC_002LoginTest<br>Parameters: Leema12345@gmail.com, Leema.12345, ValidEmailValidPassword, Leema12345@gmail.com</td>
-<td></td>
 <td>2</td>
-<td>test.TC_002LoginTest@b3ca52e</td></tr>
+<td>test.TC_002LoginTest@279fedbd</td></tr>
 </table><p>
 </body>
 </html>

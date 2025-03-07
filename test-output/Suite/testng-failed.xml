@@ -2,21 +2,18 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <parameter name="url" value="https://demowebshop.tricentis.com/"/>
-  <listeners>
-    <listener class-name="utils.ListenerClass"/>
-  </listeners>
   <test thread-count="5" name="EdgeTest(failed)">
     <parameter name="browser" value="Chrome"/>
     <classes>
       <class name="test.TC_002LoginTest">
         <methods>
-          <include name="testDetails"/>
-          <include name="closeBrowser"/>
           <include name="setup"/>
+          <include name="closeBrowser"/>
+          <include name="testDetails"/>
           <include name="launchingBrowserandLoadingURL"/>
           <include name="reportIniatialization"/>
           <include name="reportClose"/>
-          <include name="loginTest" invocation-numbers="1"/>
+          <include name="loginTest"/>
         </methods>
       </class> <!-- test.TC_002LoginTest -->
     </classes>

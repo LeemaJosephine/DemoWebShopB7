@@ -28,7 +28,7 @@ public class TC_002LoginTest extends ProjectSpecificationMethods{
 		.enterEmail(email)
 		.enterpass(pass)
 		.clickLoginButton()
-		.validateLogin(testType,expectedText);
+		.validateLogin(testType,"Leema@123gmail");  
 	}
 
 }
