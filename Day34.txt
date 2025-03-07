@@ -1,0 +1,73 @@
+What is Continuous Integration,What is Jenkins?
+Selenium Integration - Test Cases with Jenkins
+Downloading and installing Jenkins
+Freestyle Project Configuration
+
+CI/CD -> Continuous Integration and Continuous Deployment 
+
+Jenkins -> CI/CD tool
+
+-> It's an Open source tool
+-> Platform independent 
+-> It has plenty of plug-ins
+-> Stable and weekly updates.
+-> To download Jenkins -> https://www.jenkins.io/download/
+		Preferred version -> LTS
+
+.war -> independent executable file 
+	Web AR file -> Jenkins is written in Java language.
+	start the .war file in command line, which will support front end automation.
+
+-> Jenkins don't have database. It writes data in file system. The file system will be in .Jenkins folder.
+	So in real time project, we will run Jenkins in cloud database.
+
+-> If we download Jenkins again, it will overwrite the existing logs.
+
+Installation Steps:
+
+Download Jenkins from https://www.jenkins.io/download/
+
+Make sure to have java version of 11 or 17 or 21 for the LTS version 4.492.2
+
+To install/start Jenkins -> java -jar jenkins.war 
+
+		in case java 17 or 21 is not available : java -jar jenkins.war --enable-future-java
+		in case if the default port 8080 is in use :  java -jar jenkins.war --httpPort=8081
+		If the both the above cases are not working : java -jar jenkins.war --enable-future-java --httpPort=8081
+
+
+Note: Jetty webserver -> helps to load the browser component.
+
+
+To do the setup:
+
+1. Maven setup -> Manage Jenkins -> Plugins -> Available plugin -> search  for Maven Integration -> check the box and click install
+2. Java and Maven path -> Manage Jenkins -> Tools -> Add jdk (provide name and the jdk path) -> Add Maven (provide name and install automatically)
+
+
+
+Cron job:
+---------
+
+MINUTE HOUR DOM MONTH DOW
+
+10:15 am for the March month on every Monday
+
+15 10 * 3 1
+
+
+Everyday at 1:00pm for April
+
+H 13 * 4 *
+
+ONCE PER DAY
+
+H H * * *
+
+
+
+
+
+
+
+
